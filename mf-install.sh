@@ -54,6 +54,7 @@ override_dll "mfreadwrite"
 override_dll "msmpeg2adec"
 override_dll "msmpeg2vdec"
 override_dll "sqmapi"
+override_dll "msvproc"
 
 wine regedit.exe mf.reg
 wine regedit.exe wmf.reg
@@ -64,8 +65,9 @@ wine64 regedit.exe wmf.reg
 wine regsvr32 colorcnv.dll
 wine regsvr32 msmpeg2adec.dll
 wine regsvr32 msmpeg2vdec.dll
+wine regsvr32 msvproc.dll
 
 wine64 regsvr32 colorcnv.dll
 wine64 regsvr32 msmpeg2adec.dll
 wine64 regsvr32 msmpeg2vdec.dll
-
+wine64 regsvr32 msvproc.dll
